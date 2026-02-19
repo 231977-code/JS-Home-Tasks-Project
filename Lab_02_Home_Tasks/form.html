@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            width: 350px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="number" id="age" placeholder="Age">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="validateForm()">Submit</button>
+
+    <p id="message"></p>
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>

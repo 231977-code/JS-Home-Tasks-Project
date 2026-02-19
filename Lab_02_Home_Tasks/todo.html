@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional To-Do List</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .task {
+            margin: 15px 0;
+        }
+
+        input {
+            padding: 8px;
+            width: 60%;
+        }
+
+        button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>My To-Do List</h2>
+
+    <div class="task">
+        <input type="text" id="task1" value="Study JavaScript">
+        <button onclick="completeTask('task1')">Complete</button>
+        <button onclick="removeTask('task1')">Remove</button>
+    </div>
+
+    <div class="task">
+        <input type="text" id="task2" value="Finish Assignment">
+        <button onclick="completeTask('task2')">Complete</button>
+        <button onclick="removeTask('task2')">Remove</button>
+    </div>
+
+    <div class="task">
+        <input type="text" id="task3" value="Go to Gym">
+        <button onclick="completeTask('task3')">Complete</button>
+        <button onclick="removeTask('task3')">Remove</button>
+    </div>
+</div>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
